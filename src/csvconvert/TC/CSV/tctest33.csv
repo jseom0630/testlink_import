@@ -1,0 +1,4 @@
+﻿name,summary,precondition,step_number,step,expectedresult
+테스트,테슽 요약,사전조건,1,테스트스텝,결과
+테스트,테슽 요약,사전조건,2,스텝2,결과2
+테스트,테슽 요약,사전조건,3,스텝3,결과3

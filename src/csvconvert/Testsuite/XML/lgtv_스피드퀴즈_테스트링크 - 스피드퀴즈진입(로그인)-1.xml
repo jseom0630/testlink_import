@@ -1,0 +1,2211 @@
+<?xml version="1.0" ?>
+<testsuite>
+  <testsuite name="앱 실행">
+    <testcase name="실행_001">
+      <summary><![CDATA[앱 실행]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. lgtv 게이트 웨이 진입<br>2. 스피드 퀴즈 실행]]></actions>
+          <expectedresults><![CDATA[스피드퀴즈가 실행된다]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="로그인_001">
+      <summary><![CDATA[성별 선택]]></summary>
+      <preconditions><![CDATA[게스트 아이디 가입 x ]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드퀴즈 실행]]></actions>
+          <expectedresults><![CDATA[아바타 설병 선택 페이지가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="로그인_002">
+      <summary><![CDATA[성별 선택]]></summary>
+      <preconditions><![CDATA[게스트 아이디 가입 x ]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 남자 아바타 선택]]></actions>
+          <expectedresults><![CDATA[남자 아바타가 선택되며 스피드 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="로그인_003">
+      <summary><![CDATA[성별 선택]]></summary>
+      <preconditions><![CDATA[게스트 아이디 가입 x ]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 여자 아바타 선택]]></actions>
+          <expectedresults><![CDATA[여자 아바타가 선택되며 스피드 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="로그인_004">
+      <summary><![CDATA[메인 페이지]]></summary>
+      <preconditions><![CDATA[게스트 아이디 가입 o]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드퀴즈 실행]]></actions>
+          <expectedresults><![CDATA[게스트 아이디 가입 시 설정된 아바타가 노출되며 스피드퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="스피드 퀴즈 메인">
+    <testcase name="메인페이지">
+      <summary><![CDATA[메인 페이지 ui 확인]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 메인 ui 확인]]></actions>
+          <expectedresults><![CDATA[- 숫자 퀴즈 진입 버튼<br>- 기억력 퀴즈 진입 버튼<br>- 보유코인 노출 영역<br>- 보유하트 노출 영역<br>- 뒤로 가기 버튼<br>- 게임 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="뒤로가기 버튼_001">
+      <summary><![CDATA[뒤로가기 버튼]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 뒤로 가기 버튼 선택 <br>2. 동작 확인]]></actions>
+          <expectedresults><![CDATA[ox 퀴즈 화면에서 벗어나 lg tv 게이트웨이로 이동이 이루어진다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="리모컨 이전 버튼_001">
+      <summary><![CDATA[리모컨 이전 버튼]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 리모컨 이전 버튼 선택<br>2. 동작 확인]]></actions>
+          <expectedresults><![CDATA[ox 퀴즈 화면에서 벗어나 lg tv 게이트웨이로 이동이 이루어진다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="숫자 퀴즈">
+    <testcase name="숫자 퀴즈 진입_001">
+      <summary><![CDATA[숫자 퀴즈 진입]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 숫자퀴즈 선택]]></actions>
+          <expectedresults><![CDATA[숫자퀴즈 난이도 단계 선택 페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="난이도 선택_001">
+      <summary><![CDATA[난이도 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 난이도 단계 선택 페이지 ui 확인]]></actions>
+          <expectedresults><![CDATA[- 보유코인 노출 영역<br>- 보유하트 노출 영역<br>- 뒤로가기 버튼<br>- 쉬움 난이도 (코인 보상 함께 노출)<br>- 중간 난이도 (코인 보상 함께 노출)<br>- 어려움 난이도 (코인 보상 함께 노출)]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유코인_001">
+      <summary><![CDATA[보유코인 확인]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보유코인 확인]]></actions>
+          <expectedresults><![CDATA[ox 퀴즈를 진행하면서 보상 받은 코인의 수량이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유코인_002">
+      <summary><![CDATA[코인 합산 확인]]></summary>
+      <preconditions><![CDATA[보유 코인 : 1,000]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 진행<br>2. 코인 영역 확인]]></actions>
+          <expectedresults><![CDATA[보상만큼 코인이 지급되어 현재 수량에 합산이 되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유하트_001">
+      <summary><![CDATA[보유하트 확인]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보유하트 확인]]></actions>
+          <expectedresults><![CDATA[일 기준 10개까지 제공이 되며 24시 정각에 다시 10개 충전]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유하트_002">
+      <summary><![CDATA[하트 차감]]></summary>
+      <preconditions><![CDATA[코인 상태 10 / 10]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 진행<br>2. 보윺 하트 확인]]></actions>
+          <expectedresults><![CDATA[9/10 으로 하트가 차감 된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유하트_003">
+      <summary><![CDATA[하트 지급]]></summary>
+      <preconditions><![CDATA[코인 상태 0 / 10]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 24시 이후 ox 퀴즈 접속 (상황 여의치 않을 경우 api or 서버팀에게 요청하여 시간 조작)<br>2. 보유 하트 확인]]></actions>
+          <expectedresults><![CDATA[10 /10 으로 하트가 지급 된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="스피드 퀴즈 진입_001">
+      <summary><![CDATA[난이도 선택]]></summary>
+      <preconditions><![CDATA[하트가 없는 경우(남은 횟수가 1개 미만)]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 쉬움/중간/어려움 난이도 선택]]></actions>
+          <expectedresults><![CDATA[숫자 퀴즈로 진입이 이루어지지 않고 아래의 화면이 노출된다.<br>- 안내 문구 : 남은 하트가 없습니다. 내일 다시 시도해 주세요.<br>- 확인 버튼<br>- 백그라운드 딤드]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="스피드 퀴즈 진입_002">
+      <summary><![CDATA[확인]]></summary>
+      <preconditions><![CDATA[하트 없는 경우 난이도 선택 시 화면 노출 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 확인 버튼 선택]]></actions>
+          <expectedresults><![CDATA[확인 버튼 선택 시 다시 백그라운드 딤드가 풀린다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="스피드 퀴즈 진입_003">
+      <summary><![CDATA[난이도 선택]]></summary>
+      <preconditions><![CDATA[하트가 있는 경우(남은 횟수가 1개 이상)]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 쉬움/중간/어려움 난이도 선택]]></actions>
+          <expectedresults><![CDATA[리모콘 동작 튜토리얼 문구와 [플레이] 버튼  선택 가능한 페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_001">
+      <summary><![CDATA[튜토리얼 문구]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 튜토리얼 문구 확인]]></actions>
+          <expectedresults><![CDATA[리모콘 상▲ 하▼  좌◀  우▶ 버튼으로 <br>아바타를 움직여 답변을 선택 하세요.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_002">
+      <summary><![CDATA[플레이 버튼]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 플레이 버튼 선택]]></actions>
+          <expectedresults><![CDATA[숫자퀴즈가 시작된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_003">
+      <summary><![CDATA[게임 시작 전 화면]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 튜토리얼 시작 전 동작 확인]]></actions>
+          <expectedresults><![CDATA[1. 게임 시작 전 카운트다운 레디,고 문구와 음성 표출 <br>READY (0.1~0.2초) 출력<br>2. GO! (0.1~0.2초) 출력 후 게임 시작]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="스피드 퀴즈 _001">
+      <summary><![CDATA[문제 노출 확인]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 노출 확인]]></actions>
+          <expectedresults><![CDATA[퀴즈 문제는 랜덤 (3~10 까지)<br>귀여운 캐릭터가 달려서 지나간다.  <br>달려서 지나가는 움직이는 모션이 노출 <br>달리는 도도도 귀여운 음향효과 함께 노출 ]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="스피드 퀴즈 _002">
+      <summary><![CDATA[퀴즈]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 튜토리얼 퀴즈 랜덤 노출 확인]]></actions>
+          <expectedresults><![CDATA[달려가는 캐릭터의 수가 랜덤으로 3명부터 10명까지 노출 되고 3명 미만 10명 초과로 노출되지 않는다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="스피드 퀴즈 _003">
+      <summary><![CDATA[문제 풀이]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 튜토리얼 풀이 화면 확인]]></actions>
+          <expectedresults><![CDATA[퀴즈 문제 노출 이후 문제 풀이 화면이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="스피드 퀴즈 _004">
+      <summary><![CDATA[문제 제시]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 확인]]></actions>
+          <expectedresults><![CDATA[공통 문제가 노출된다.<br>문제 : 아이의 수는? ]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="난이도 선택_002">
+      <summary><![CDATA[답 선택지]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 난이도 선택에 따른 답 선택지 확인]]></actions>
+          <expectedresults><![CDATA[선택지 <br>쉬움 :  답 포함한 선택지 숫자 2개<br>중간 : 답 포함한 선택지 숫자 3개 <br>어려움 ; 답 포함한 선택지 숫자 4개 ]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_001">
+      <summary><![CDATA[답 선택지]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 쉬움 난이도 레벨의 답 선택지 갯수 확인]]></actions>
+          <expectedresults><![CDATA[쉬움 난이도에서는 선택지 2개가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_002">
+      <summary><![CDATA[정답 선택시간]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 게임 시작 이후 답 선택 시간 확인]]></actions>
+          <expectedresults><![CDATA[정답을 고를수 있는 시간은 5초이며 5초가 소진될 경우 오답으로 판정된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_003">
+      <summary><![CDATA[카운트 다운]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 하단 카운트다운 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트 다운이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_004">
+      <summary><![CDATA[프로그레스바]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 하단 프로그레스바 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트다운과 같이 동작되는 프로그레스바가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_005">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 좌 버튼 선택]]></actions>
+          <expectedresults><![CDATA[좌측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_006">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[우측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_007">
+      <summary><![CDATA[답안지 선택 BGM]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[아바타가 답변영역에 위치 될 때 걸음소리 음원이 같이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_008">
+      <summary><![CDATA[답안지 선택 (카운트 활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 활성화 되어 있는 경우 답안지 변경이 가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_009">
+      <summary><![CDATA[답안지 선택 (카운트 비활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 비활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 종료되어 비활성화 되어 있는 경우 답안지 변경이 불가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_010">
+      <summary><![CDATA[정답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 신나서 뛰는 액션을 취한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_011">
+      <summary><![CDATA[정답판정(정답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 정답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[아바타 위로 코인이 쌓이는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_012">
+      <summary><![CDATA[정답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[코인이 짤랑거리는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_013">
+      <summary><![CDATA[오답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 함정 구멍으로 떨어지는 애니메이션 동작]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_014">
+      <summary><![CDATA[오답판정(오답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 오답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[위치한 답안지가 함정구멍처럼 열리는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_015">
+      <summary><![CDATA[오답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[추락하는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_016">
+      <summary><![CDATA[게임 종료]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 총 5문제 풀이를 모두 진행]]></actions>
+          <expectedresults><![CDATA[게임종료 페이지가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_017">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 성공했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_018">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[성공 시 아바타가 신나하는 애니메이션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_019">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_020">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_021">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[스피드 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_022">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_023">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 실패했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_024">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[실패 시 아바타가 슬퍼하는 액션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_025">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_026">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_027">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[스피드 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_028">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_001">
+      <summary><![CDATA[답 선택지]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 중간 난이도 레벨의 답 선택지 갯수 확인]]></actions>
+          <expectedresults><![CDATA[중간 난이도에서는 선택지 3개가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_002">
+      <summary><![CDATA[정답 선택시간]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 게임 시작 이후 답 선택 시간 확인]]></actions>
+          <expectedresults><![CDATA[정답을 고를수 있는 시간은 5초이며 5초가 소진될 경우 오답으로 판정된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_003">
+      <summary><![CDATA[카운트 다운]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 하단 카운트다운 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트 다운이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_004">
+      <summary><![CDATA[프로그레스바]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 하단 프로그레스바 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트다운과 같이 동작되는 프로그레스바가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_005">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 좌 버튼 선택]]></actions>
+          <expectedresults><![CDATA[좌측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_006">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[우측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_007">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 상 버튼 선택]]></actions>
+          <expectedresults><![CDATA[상단 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_008">
+      <summary><![CDATA[답안지 선택 BGM]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[아바타가 답변영역에 위치 될 때 걸음소리 음원이 같이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_009">
+      <summary><![CDATA[답안지 선택 (카운트 활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 활성화 되어 있는 경우 답안지 변경이 가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_010">
+      <summary><![CDATA[답안지 선택 (카운트 비활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 비활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 종료되어 비활성화 되어 있는 경우 답안지 변경이 불가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_011">
+      <summary><![CDATA[정답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 신나서 뛰는 액션을 취한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_012">
+      <summary><![CDATA[정답판정(정답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 정답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[아바타 위로 코인이 쌓이는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_013">
+      <summary><![CDATA[정답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[코인이 짤랑거리는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_014">
+      <summary><![CDATA[오답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 함정 구멍으로 떨어지는 애니메이션 동작]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_015">
+      <summary><![CDATA[오답판정(오답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 오답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[위치한 답안지가 함정구멍처럼 열리는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_016">
+      <summary><![CDATA[오답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[추락하는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_017">
+      <summary><![CDATA[게임 종료]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 총 5문제 풀이를 모두 진행]]></actions>
+          <expectedresults><![CDATA[게임종료 페이지가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_018">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 성공했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_019">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[성공 시 아바타가 신나하는 애니메이션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_020">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_021">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_022">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[스피드 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_023">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_024">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 실패했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_025">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[실패 시 아바타가 슬퍼하는 액션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_026">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_027">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_028">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[스피드 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_029">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_001">
+      <summary><![CDATA[답 선택지]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 중간 난이도 레벨의 답 선택지 갯수 확인]]></actions>
+          <expectedresults><![CDATA[중간 난이도에서는 선택지 3개가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_002">
+      <summary><![CDATA[정답 선택시간]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 게임 시작 이후 답 선택 시간 확인]]></actions>
+          <expectedresults><![CDATA[정답을 고를수 있는 시간은 5초이며 5초가 소진될 경우 오답으로 판정된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_003">
+      <summary><![CDATA[카운트 다운]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 하단 카운트다운 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트 다운이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_004">
+      <summary><![CDATA[프로그레스바]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 하단 프로그레스바 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트다운과 같이 동작되는 프로그레스바가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_005">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 좌 버튼 선택]]></actions>
+          <expectedresults><![CDATA[좌측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_006">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[우측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_007">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 상 버튼 선택]]></actions>
+          <expectedresults><![CDATA[상단 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_008">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 하 버튼 선택]]></actions>
+          <expectedresults><![CDATA[하단 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_009">
+      <summary><![CDATA[답안지 선택 BGM]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[아바타가 답변영역에 위치 될 때 걸음소리 음원이 같이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_010">
+      <summary><![CDATA[답안지 선택 (카운트 활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 활성화 되어 있는 경우 답안지 변경이 가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_011">
+      <summary><![CDATA[답안지 선택 (카운트 비활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 비활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 스피드 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 종료되어 비활성화 되어 있는 경우 답안지 변경이 불가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_012">
+      <summary><![CDATA[정답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 신나서 뛰는 액션을 취한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_013">
+      <summary><![CDATA[정답판정(정답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 정답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[아바타 위로 코인이 쌓이는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_014">
+      <summary><![CDATA[정답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[코인이 짤랑거리는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_015">
+      <summary><![CDATA[오답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 함정 구멍으로 떨어지는 애니메이션 동작]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_016">
+      <summary><![CDATA[오답판정(오답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 오답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[위치한 답안지가 함정구멍처럼 열리는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_017">
+      <summary><![CDATA[오답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[추락하는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_018">
+      <summary><![CDATA[게임 종료]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 총 5문제 풀이를 모두 진행]]></actions>
+          <expectedresults><![CDATA[게임종료 페이지가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_019">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 성공했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_020">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[성공 시 아바타가 신나하는 애니메이션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_021">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_022">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_023">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[스피드 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_024">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_025">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 실패했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_026">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[실패 시 아바타가 슬퍼하는 액션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_027">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_028">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_029">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[스피드 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_030">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="기억력 퀴즈">
+    <testcase name="기억력 퀴즈 진입_001">
+      <summary><![CDATA[기억력 퀴즈 진입 확인]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 선택]]></actions>
+          <expectedresults><![CDATA[기억력 퀴즈 난이도 단계 선택 페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="난이도 선택_001">
+      <summary><![CDATA[난이도 선택 ui 확인]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 난이도 단계 선택 페이지 ui 확인]]></actions>
+          <expectedresults><![CDATA[- 보유코인 노출 영역<br>- 보유하트 노출 영역<br>- 뒤로가기 버튼<br>- 쉬움 난이도 (코인 보상 함께 노출)<br>- 중간 난이도 (코인 보상 함께 노출)<br>- 어려움 난이도 (코인 보상 함께 노출)]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유코인_001">
+      <summary><![CDATA[코인 영역]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보유코인 확인]]></actions>
+          <expectedresults><![CDATA[ox 퀴즈를 진행하면서 보상 받은 코인의 수량이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유코인_002">
+      <summary><![CDATA[코인 지급]]></summary>
+      <preconditions><![CDATA[보유 코인 : 1,000]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 진행<br>2. 코인 영역 확인]]></actions>
+          <expectedresults><![CDATA[보상만큼 코인이 지급되어 현재 수량에 합산이 되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유하트_001">
+      <summary><![CDATA[-]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보유하트 확인]]></actions>
+          <expectedresults><![CDATA[일 기준 10개까지 제공이 되며 24시 정각에 다시 10개 충전]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유하트_002">
+      <summary><![CDATA[하트 차감]]></summary>
+      <preconditions><![CDATA[코인 상태 10 / 10]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 진행<br>2. 보윺 하트 확인]]></actions>
+          <expectedresults><![CDATA[9/10 으로 하트가 차감 된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="보유하트_003">
+      <summary><![CDATA[하트 지급]]></summary>
+      <preconditions><![CDATA[코인 상태 0 / 10]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 24시 이후 ox 퀴즈 접속 (상황 여의치 않을 경우 api or 서버팀에게 요청하여 시간 조작)<br>2. 보유 하트 확인]]></actions>
+          <expectedresults><![CDATA[10 /10 으로 하트가 지급 된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="기억력 퀴즈 진입_002">
+      <summary><![CDATA[난이도 선택]]></summary>
+      <preconditions><![CDATA[하트가 없는 경우(남은 횟수가 1개 미만)]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 쉬움/중간/어려움 난이도 선택]]></actions>
+          <expectedresults><![CDATA[아래의 화면이 노출된다.<br>- 안내 문구 : 남은 하트가 없습니다. 내일 다시 시도해 주세요.<br>- 확인 버튼<br>- 백그라운드 딤드]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="기억력 퀴즈 진입_003">
+      <summary><![CDATA[확인]]></summary>
+      <preconditions><![CDATA[하트 없는 경우 난이도 선택 시 화면 노출 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 확인 버튼 선택]]></actions>
+          <expectedresults><![CDATA[확인 버튼 선택 시 다시 백그라운드 딤드가 풀린다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="기억력 퀴즈 진입_004">
+      <summary><![CDATA[난이도 선택]]></summary>
+      <preconditions><![CDATA[하트가 있는 경우(남은 횟수가 1개 이상)]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 쉬움/중간/어려움 난이도 선택]]></actions>
+          <expectedresults><![CDATA[리모콘 동작 튜토리얼 문구와 [플레이] 버튼  선택 가능한 페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_001">
+      <summary><![CDATA[튜토리얼 진입]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 난이도 선택 완료]]></actions>
+          <expectedresults><![CDATA[기억력 퀴즈 튜토리얼 페이지로 진입이 이루어진다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_002">
+      <summary><![CDATA[튜토리얼 시작]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 튜토리얼 시작 페이지 ui 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 오픈된 카드를 잘 기억해보세요!<br>- 플레이 버튼]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_003">
+      <summary><![CDATA[플레이]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 플레이 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[기억력 퀴즈 튜토리얼 준비 상태 진입]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_004">
+      <summary><![CDATA[준비 상태]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 준비 화면 확인]]></actions>
+          <expectedresults><![CDATA[- 총 10장의 카드 노출<br>- 게임 시작 전 카운트다운 레디 -> 고 문구와 음성이 표출된다.<br>- 레디 ->  고 출력 후 게임 시작]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_005">
+      <summary><![CDATA[카드오픈]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임시작<br>2. 카드오픈 동작 확인]]></actions>
+          <expectedresults><![CDATA[카드 뒤집히는 이미지 모션과 음향효과가 노출되며 5초 동안 오픈 상태가 유지된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="튜토리얼_006">
+      <summary><![CDATA[카드닫힘]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 카드닫힘 동작 확인]]></actions>
+          <expectedresults><![CDATA[카드 오픈 5초 이후 카드닫힘 상태로 변경된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="문제 제시_001">
+      <summary><![CDATA[-]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 카드닫힘 동작 이후 문제 노출 확인]]></actions>
+          <expectedresults><![CDATA[카드에 노출된 이미지에 맞는 문제가 노출된다.<br>ex : 사과는 3개]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_001">
+      <summary><![CDATA[답 선택지]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 쉬움 난이도 레벨의 답 선택지 갯수 확인]]></actions>
+          <expectedresults><![CDATA[쉬움 난이도에서는 선택지 2개가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_002">
+      <summary><![CDATA[정답 선택시간]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 게임 시작 이후 답 선택 시간 확인]]></actions>
+          <expectedresults><![CDATA[정답을 고를수 있는 시간은 5초이며 5초가 소진될 경우 오답으로 판정된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_003">
+      <summary><![CDATA[카운트 다운]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 하단 카운트다운 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트 다운이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_004">
+      <summary><![CDATA[프로그레스바]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 하단 프로그레스바 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트다운과 같이 동작되는 프로그레스바가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_005">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 좌 버튼 선택]]></actions>
+          <expectedresults><![CDATA[좌측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_006">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[우측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_007">
+      <summary><![CDATA[답안지 선택 BGM]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[아바타가 답변영역에 위치 될 때 걸음소리 음원이 같이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_008">
+      <summary><![CDATA[답안지 선택 (카운트 활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 활성화 되어 있는 경우 답안지 변경이 가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_009">
+      <summary><![CDATA[답안지 선택 (카운트 비활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 비활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 종료되어 비활성화 되어 있는 경우 답안지 변경이 불가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_010">
+      <summary><![CDATA[정답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 신나서 뛰는 액션을 취한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_011">
+      <summary><![CDATA[정답판정(정답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 정답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[아바타 위로 코인이 쌓이는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_012">
+      <summary><![CDATA[정답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[코인이 짤랑거리는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_013">
+      <summary><![CDATA[오답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 함정 구멍으로 떨어지는 애니메이션 동작]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_014">
+      <summary><![CDATA[오답판정(오답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 오답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[위치한 답안지가 함정구멍처럼 열리는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_015">
+      <summary><![CDATA[오답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[추락하는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_016">
+      <summary><![CDATA[게임 종료]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 총 5문제 풀이를 모두 진행]]></actions>
+          <expectedresults><![CDATA[게임종료 페이지가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_017">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 성공했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_018">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[성공 시 아바타가 신나하는 애니메이션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_019">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_020">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_021">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[기억력 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_022">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_023">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 실패했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_024">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[실패 시 아바타가 슬퍼하는 액션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_025">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_026">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_027">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[기억력 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="쉬움 난이도_028">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_001">
+      <summary><![CDATA[답 선택지]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 중간 난이도 레벨의 답 선택지 갯수 확인]]></actions>
+          <expectedresults><![CDATA[중간 난이도에서는 선택지 3개가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_002">
+      <summary><![CDATA[정답 선택시간]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 게임 시작 이후 답 선택 시간 확인]]></actions>
+          <expectedresults><![CDATA[정답을 고를수 있는 시간은 5초이며 5초가 소진될 경우 오답으로 판정된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_003">
+      <summary><![CDATA[카운트 다운]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 하단 카운트다운 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트 다운이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_004">
+      <summary><![CDATA[프로그레스바]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 하단 프로그레스바 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트다운과 같이 동작되는 프로그레스바가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_005">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 좌 버튼 선택]]></actions>
+          <expectedresults><![CDATA[좌측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_006">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[우측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_007">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 상 버튼 선택]]></actions>
+          <expectedresults><![CDATA[상단 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_008">
+      <summary><![CDATA[답안지 선택 BGM]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[아바타가 답변영역에 위치 될 때 걸음소리 음원이 같이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_009">
+      <summary><![CDATA[답안지 선택 (카운트 활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 활성화 되어 있는 경우 답안지 변경이 가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_010">
+      <summary><![CDATA[답안지 선택 (카운트 비활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 비활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 종료되어 비활성화 되어 있는 경우 답안지 변경이 불가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_011">
+      <summary><![CDATA[정답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 신나서 뛰는 액션을 취한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_012">
+      <summary><![CDATA[정답판정(정답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 정답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[아바타 위로 코인이 쌓이는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_013">
+      <summary><![CDATA[정답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[코인이 짤랑거리는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_014">
+      <summary><![CDATA[오답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 함정 구멍으로 떨어지는 애니메이션 동작]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_015">
+      <summary><![CDATA[오답판정(오답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. 오답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[위치한 답안지가 함정구멍처럼 열리는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_016">
+      <summary><![CDATA[오답판정(BGM)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제를 의도적으로 틀림<br>2. BGM 확인]]></actions>
+          <expectedresults><![CDATA[추락하는 음원이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_017">
+      <summary><![CDATA[게임 종료]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 총 5문제 풀이를 모두 진행]]></actions>
+          <expectedresults><![CDATA[게임종료 페이지가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_018">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 성공했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_019">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (성공) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[성공 시 아바타가 신나하는 애니메이션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_020">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_021">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_022">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[기억력 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_023">
+      <summary><![CDATA[게임 종료(성공)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_024">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 페이지 확인]]></actions>
+          <expectedresults><![CDATA[- 안내문구 : 실패했습니다.<br>- 점수 노출 영역<br>- 보상 노출 영역<br>- 나갈래요 버튼<br>- 다시할래요 버튼<br>- 아바타 노출]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_025">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 게임 종료 (실패) 아바타 액션 확인]]></actions>
+          <expectedresults><![CDATA[실패 시 아바타가 슬퍼하는 액션이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_026">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 점수 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10점 획득<br>- 총 문제의 정답 수의 비례하여 점수가 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_027">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 보상 확인]]></actions>
+          <expectedresults><![CDATA[- 문제 1개당 10코인 획득<br>- 총 문제의 정답 수의 비례하여 코인이 정확하게 합산되어 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_028">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 나갈래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[기억력 퀴즈 메인페이지로 이동된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="중간 난이도_029">
+      <summary><![CDATA[게임 종료(실패)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 다시할래요 버튼 클릭]]></actions>
+          <expectedresults><![CDATA[동일 난이도로 게임 재시작이 이루어지며 하트 1개가 소진된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_001">
+      <summary><![CDATA[답 선택지]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 중간 난이도 레벨의 답 선택지 갯수 확인]]></actions>
+          <expectedresults><![CDATA[중간 난이도에서는 선택지 3개가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_002">
+      <summary><![CDATA[정답 선택시간]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 게임 시작 이후 답 선택 시간 확인]]></actions>
+          <expectedresults><![CDATA[정답을 고를수 있는 시간은 5초이며 5초가 소진될 경우 오답으로 판정된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_003">
+      <summary><![CDATA[카운트 다운]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 하단 카운트다운 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트 다운이 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_004">
+      <summary><![CDATA[프로그레스바]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 하단 프로그레스바 동작 확인]]></actions>
+          <expectedresults><![CDATA[5,4,3,2,1 카운트다운과 같이 동작되는 프로그레스바가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_005">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 좌 버튼 선택]]></actions>
+          <expectedresults><![CDATA[좌측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_006">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[우측 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_007">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 상 버튼 선택]]></actions>
+          <expectedresults><![CDATA[상단 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_008">
+      <summary><![CDATA[답안지 선택]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 하 버튼 선택]]></actions>
+          <expectedresults><![CDATA[하단 답안지로 포커스가 맞춰지며 사용 유저의 아바타가 답변영역 안에 위치한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_009">
+      <summary><![CDATA[답안지 선택 BGM]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[아바타가 답변영역에 위치 될 때 걸음소리 음원이 같이 재생된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_010">
+      <summary><![CDATA[답안지 선택 (카운트 활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 활성화 되어 있는 경우 답안지 변경이 가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_011">
+      <summary><![CDATA[답안지 선택 (카운트 비활성화)]]></summary>
+      <preconditions><![CDATA[5초 카운트 비활성화 상태]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 기억력 퀴즈 진입<br>2. 리모콘 상/ 좌/우 버튼 선택]]></actions>
+          <expectedresults><![CDATA[5초 카운트가 종료되어 비활성화 되어 있는 경우 답안지 변경이 불가능하다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_012">
+      <summary><![CDATA[정답판정(아바타 동작)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 아바타 동작 확인]]></actions>
+          <expectedresults><![CDATA[아바타가 신나서 뛰는 액션을 취한다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="어려움 난이도_013">
+      <summary><![CDATA[정답판정(정답 이펙트)]]></summary>
+      <preconditions><![CDATA[]]></preconditions>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions><![CDATA[1. 문제 정답을 맞춤<br>2. 정답 이펙트 확인]]></actions>
+          <expectedresults><![CDATA[아바타 위로 코인이 쌓이는 이펙트가 노출된다.]]></expectedresults>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

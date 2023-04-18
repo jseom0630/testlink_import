@@ -1,6 +1,0 @@
-﻿suite,name,summary,precondition,step_number,step,expectedresult
-qa,테스트,테슽 요약,사전조건,1,테스트스텝,결과
-qa,테스트,테슽 요약,사전조건,2,스텝2,결과2
-qa,테스트,테슽 요약,사전조건,3,스텝3,결과3
-qc,엄재식,큐씨,뭐,1,큐씨스텝,1
-qa,김기원,큐에이,왜,1,큐에이스텝,2
